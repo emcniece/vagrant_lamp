@@ -63,6 +63,9 @@ server:
     install: '1'
     packages:
         - htop
+		- gd
+		- gd-devel
+		- php-gd
 firewall:
     install: '1'
     rules: null
@@ -77,6 +80,7 @@ apache:
         sendfile: 0
     modules:
         - rewrite
+		- gd
     vhosts:
         4NyaKL65OLaX:
             servername: awesome.dev
