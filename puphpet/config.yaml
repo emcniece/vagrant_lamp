@@ -63,9 +63,9 @@ server:
     install: '1'
     packages:
         - htop
-		- gd
-		- gd-devel
-		- php-gd
+        - gd
+        - gd-devel
+        - php-gd
 firewall:
     install: '1'
     rules: null
@@ -80,7 +80,7 @@ apache:
         sendfile: 0
     modules:
         - rewrite
-		- gd
+        - gd
     vhosts:
         4NyaKL65OLaX:
             servername: awesome.dev
@@ -136,7 +136,7 @@ php:
             - cli
             - intl
             - mcrypt
-			- gd
+            - gd
         pear: {  }
         pecl:
             - pecl_http
@@ -178,7 +178,7 @@ ruby:
         GjfGm7tYogzr:
             version: ''
 nodejs:
-    install: '0'
+    install: '1'
     npm_packages: {  }
 python:
     install: '1'
